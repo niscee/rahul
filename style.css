@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=PT+Sans+Narrow&family=Pangolin&family=Rubik:wght@300&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+    font-family: 'Pangolin', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.generic-div-style{
+    width: 70vw;
+    margin: auto;
+}
+
+/* Navbar starts */
+.navbar-ul{
+    height: 3.5rem;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+
+.navbar-ul a:hover{
+    color: red;
+    cursor: pointer;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+}
+
+/* Quote starts */
+.quote{
+    height: 3rem;
+    background-color: #0067b8;
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-bottom: 2.5rem; */
+}
+
+.quote p{
+    letter-spacing: 1.8px;
+}
+
+/* Banner starts */
+.banner{
+    height: 40rem;
+    margin-bottom: 3rem;
+}
+
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.button-container button{
+    background-color: transparent;
+    color: black;
+    padding: 0.5rem 2.5rem;
+    border: 2.2px solid #0067b8;
+    cursor: pointer;
+}
+
+.button-container button:hover{
+    padding: 0.5rem 3.2rem;
+}
+
+/* sign in/up form starts */
+#form-type{
+    letter-spacing: 1.5px;
+}
+
+.signup-signin-form{
+    background-color: white;
+    color: black;
+    position: absolute;
+    height: 35%;
+    width: 40%;
+    top: 20%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    display: none;
+    z-index: 100;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+register-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .register-form input[type="text"],
+  .register-form input[type="password"],
+  .register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0067b8;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .register-form button:hover {
+    background-color: #0067b8;
+  }
+
+  /* Card starts */
+  .card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 2rem;
+    height: 15rem;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  .card p {
+    margin-bottom: 0;
+  }
+
+  .feature-customise{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card:hover{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes example {
+    from {}
+    to {
+        transform: scale(0.98);
+    }
+  }
+
+  .feature{
+    width: 45%;
+  }
+
+  .customise{
+    width: 45%;
+  }
+
+/* Mobile view */
+@media only screen and (max-width: 767px) {
+    #container {
+        width: 100vw;
+    }
+
+    .generic-div-style{
+        width: 100vw;
+    }
+
+    .navbar-ul{
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .banner{
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .quote p{
+        font-size: 0.7rem;
+        letter-spacing: 0.3px;
+    }
+
+    .button-container{
+        width: 70%;
+    }
+  }
