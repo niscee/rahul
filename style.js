@@ -14,6 +14,7 @@ if (isLogin) {
   signin.style.display = "block";
   signup.style.display = "block";
   logout.style.display = "none";
+  // buybtn.style.display = "none";
 }
 
 // clear localstorage

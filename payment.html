@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav class="generic-div-style">
+        <ul class="navbar-ul">
+          <a href="./index.html">Home</a>
+          <a href="./bike.html">Rent Bikes</a>
+          <a href="./contact.html">Contact</a>
+          <a>Search</a>
+        </ul>
+      </nav>
+      <section class="quote">
+        <p>
+          Life is like riding a bicycle. To keep your balance, you must keep
+          moving.
+        </p>
+      </section>
+      <section class="generic-div-style payment-form">
+        <div class="register-form">
+          <section id="purchase-msg" style="display: none">
+            <h2>Thank you for purchasing......</h2>
+          </section>
+          <section id="purchase-form">
+            <h2 id="form-type">Payment</h2>
+            <form id="loginRegisterForm" onsubmit="paymentNotification()">
+              <input
+                id="field-name"
+                type="text"
+                name="username"
+                placeholder="Card Name"
+              />
+              <input
+                type="text"
+                name="text"
+                id="field-email"
+                placeholder="Card Number"
+                required
+              />
+              <input
+                id="field-password"
+                type="text"
+                name="password"
+                placeholder="CVC"
+                required
+              />
+              <button id="field-button-type" type="submit">Pay</button>
+            </form>
+          </section>
+          <br />
+          <a href="./bike.html"
+            ><button style="background-color: red">Back</button></a
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    const paymentNotification = () => {
+      event.preventDefault();
+      let purchasemsg = document.getElementById("purchase-msg");
+      let purchaseform = document.getElementById("purchase-form");
+      purchasemsg.style.display = "block";
+      purchaseform.style.display = "none";
+      setTimeout(() => {
+        purchasemsg.style.display = "none";
+      }, 1000);
+    };
+  </script>
+</html>
