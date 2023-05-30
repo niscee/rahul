@@ -3,6 +3,20 @@ let signup = document.getElementById("sign-up-btn");
 let logout = document.getElementById("logout-btn");
 let formsubmit = document.getElementById("loginRegisterForm");
 let signupclose = document.getElementById("sign-up-btn-close");
+let hamburgericon = document.getElementById("hamburger-icon");
+let hamburgerclose = document.getElementById("hamburger-close");
+
+// hamburger navbar open/close
+hamburgericon.addEventListener("click", (event) => {
+  let hamburger = document.getElementsByClassName("hamburger-navbar")[0];
+  hamburger.style.display = "block";
+});
+
+// hamburger navbar open/close
+hamburgerclose.addEventListener("click", (event) => {
+  let hamburger = document.getElementsByClassName("hamburger-navbar")[0];
+  hamburger.style.display = "none";
+});
 
 // Hide sign in button if user logged in.
 const isLogin = localStorage.getItem("isLogin");

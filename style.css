@@ -28,6 +28,41 @@ a {
   margin: auto;
 }
 
+.hamburger-navbar {
+  z-index: 200;
+  background-color: whitesmoke;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  right: 0;
+}
+
+.hamburger-navbar a {
+  display: block;
+  padding: 1.5rem 0.8rem;
+  font-size: 1.2rem;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+}
+
+#hamburger-div  {
+  display: none;
+  padding: 0.4rem;
+}
+
+#hamburger-icon {
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+#hamburger-close {
+  text-align: left;
+  color: red;
+}
+
 /* Navbar starts */
 .navbar-ul {
   height: 3.5rem;
@@ -226,8 +261,7 @@ register-form {
   }
 
   .navbar-ul {
-    padding: 0.2rem;
-    font-size: 0.8rem;
+    display: none;
   }
 
   .banner {
@@ -260,6 +294,14 @@ register-form {
   .signup-signin-form {
     padding: 0.8rem;
   }
+
+  #hamburger-div  {
+    display: block;
+  }
+
+  /* .hamburger-navbar{
+    display: block;
+  } */
 
   /* .payment-form{
     height: auto;
