@@ -212,6 +212,40 @@ register-form {
   height: 15rem;
 }
 
+.location-card{
+  height: 30rem;
+  padding: 5px;
+}
+
+.location-card div{
+  margin-bottom: 0.8rem;
+}
+
+.buy-btn-location{
+  width: 100%;
+}
+
+
+.location-card select{
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#from-location{
+  width: 100%;
+}
+
+#map {
+  height: 12rem;
+  width: 100%;
+}
+
+.location-card:hover{
+  animation-name: none;
+}
+
 .card h3 {
   margin-top: 0;
 }
@@ -260,6 +294,11 @@ register-form {
     width: 100vw;
   }
 
+  .location-card{
+    height: 15rem;
+    padding: 5px;
+  }
+
   .navbar-ul {
     display: none;
   }
@@ -297,6 +336,10 @@ register-form {
 
   #hamburger-div  {
     display: block;
+  }
+
+  .button-container{
+    margin: 0.8rem;
   }
 
   /* .hamburger-navbar{

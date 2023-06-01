@@ -42,55 +42,46 @@
 
       <section class="generic-div-style feature-customise">
         <div class="feature">
-          <h2>Available Bike</h2>
+          <h2>Bike</h2>
           <br />
-          <article class="card">
+          <article class="card location-card">
             <img src="./images/bike1.jpg" alt="banner" />
-          </article>
-          <article class="card">
-            <img src="./images/bike2.jpg" alt="banner" />
-          </article>
-          <article class="card">
-            <img src="./images/banner.jpg" alt="banner" />
           </article>
         </div>
         <div class="customise">
           <h2>Details</h2>
           <br />
-          <article class="card">
-            <h3>
-              ULTRALIGHT ST6.0 HARDTAIL MOUNTAIN BIKE STEALTH BLACK (X LARGE,
-              21")
-            </h3>
-            <br />
-            <p>
-              We provide easy step by step instructions & supporting video
-              tutorials to help you with assembly & adjustments.
-            </p>
-            <br />
-            <a href="./location.html"><button class="buy-btn">Buy</button></a>
-          </article>
-          <article class="card">
-            <h3>
-              LIGHT HTR.0 HARDTAIL MOUNTAIN BIKE STEALTH WHITE (X LARGE, 21")
-            </h3>
-            <br />
-            <p>
-              We provide easy step by step instructions & supporting video
-              tutorials to help you with assembly & adjustments.
-            </p>
-            <br />
-            <a href="./location.html"><button class="buy-btn">Buy</button></a>
-          </article>
-          <article class="card">
-            <h3>Heavy GGT.0 HARDTAIL MOUNTAIN BIKE BLUE (X LARGE, 21")</h3>
-            <br />
-            <p>
-              We provide easy step by step instructions & supporting video
-              tutorials to help you with assembly & adjustments.
-            </p>
-            <br />
-            <a href="./location.html"><button class="buy-btn">Buy</button></a>
+          <article class="location-card">
+            <div>
+              <label for="cars">From:</label>
+              <select id="from-location">
+                <option value="volvo">Berala</option>
+                <option value="bmw">Lidcombe</option>
+                <option value="audi">Strathfield</option>
+                <option value="ford">Campsie</option>
+                <option value="toyota">Redfren</option>
+              </select>
+            </div>
+            <div>
+              <label for="cars">To:</label>
+              <select id="from-location">
+                <option value="volvo">Bankstown</option>
+                <option value="bmw">Central</option>
+                <option value="audi">Hurtsville</option>
+                <option value="ford">Macquire Park</option>
+                <option value="toyota">Paramata</option>
+              </select>
+            </div>
+            <div id="map">
+              <img src="./images/map.jpeg" alt="" />
+            </div>
+            <div>
+              <a href="./payment.html"
+                ><button class="buy-btn-location" style="margin-bottom: 2rem">
+                  Submit
+                </button></a
+              >
+            </div>
           </article>
         </div>
       </section>
