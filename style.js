@@ -84,7 +84,7 @@ formsubmit.addEventListener("submit", (event) => {
     if (email === null || password === null) {
       alert("Please register first!!!!!!");
     } else {
-      if (email != emailInput.value && password != passwordInput.value) {
+      if (email != emailInput.value || password != passwordInput.value) {
         alert("Wrong Credentails!!!!!");
       } else {
         localStorage.setItem("isLogin", true);
@@ -96,14 +96,3 @@ formsubmit.addEventListener("submit", (event) => {
   }
   location.reload();
 });
-
-// let buybtn = document.getElementsByClassName("buy-btn");
-// // const isLogin = localStorage.getItem("isLogin");
-// const buybtnArray = Array.from(buybtn);
-// buybtnArray.forEach((btn) => {
-//   if (isLogin) {
-//     btn.style.display = "block";
-//   } else {
-//     btn.style.display = "none";
-//   }
-// });

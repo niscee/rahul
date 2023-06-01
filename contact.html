@@ -51,18 +51,24 @@
             />
             <input
               type="text"
-              name="text"
+              name="email"
               id="field-email"
               placeholder="Email"
               required
             />
             <input
-              id="field-password"
+              id="field-phone"
               type="text"
-              name="password"
+              name="phone"
               placeholder="Phone"
               required
             />
+            <textarea
+              id="field-message"
+              name="message"
+              style="width: 100%; height: 10rem"
+              cols="50"
+            ></textarea>
             <button id="field-button-type" type="submit">Submit</button>
           </form>
           <br />
@@ -77,12 +83,15 @@
   <script>
     function paymentNotification() {
       event.preventDefault();
-      let contactmsg = document.getElementById("form-type");
-      contactmsg.textContent = "We will contact will soon.....";
-      setTimeout(() => {
-        contactmsg.textContent = "Contact Us";
-        location.reload();
-      }, 1000);
+      const nameInput = document.getElementById("field-name");
+      const emailInput = document.getElementById("field-email");
+      const phoneInput = document.getElementById("field-phone");
+      const messageInput = document.getElementById("field-message");
+      localStorage.setItem("contact_name", nameInput.value);
+      localStorage.setItem("contact_email", emailInput.value);
+      localStorage.setItem("contact_phone", phoneInput.value);
+      localStorage.setItem("contact_message", messageInput.value);
+      window.location.href = "usercontact.html";
     }
   </script>
 </html>

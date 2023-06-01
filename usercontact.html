@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <section class="hamburger-navbar">
+        <ul>
+          <a id="hamburger-close">X</a>
+          <a href="./index.html">Home</a>
+          <a href="./bike.html">Rent Bikes</a>
+          <a href="./location.html">Location</a>
+          <a href="./payment.html">Payment</a>
+          <a href="./contact.html">Contact</a>
+          <a>Search</a>
+        </ul>
+      </section>
+      <nav class="generic-div-style">
+        <div id="hamburger-div">
+          <img id="hamburger-icon" src="./images/hamburger4.png" />
+        </div>
+        <ul class="navbar-ul">
+          <a href="./index.html">Home</a>
+          <a href="./bike.html">Rent Bikes</a>
+          <a href="./location.html">Location</a>
+          <a href="./payment.html">Payment</a>
+          <a href="./contact.html">Contact</a>
+          <a>Search</a>
+        </ul>
+      </nav>
+      <section class="quote">
+        <p>
+          Life is like riding a bicycle. To keep your balance, you must keep
+          moving.
+        </p>
+      </section>
+      <section class="generic-div-style payment-form">
+        <div class="register-form user-contact-form">
+          <h1>Thank you ......</h1>
+          <div>
+            <p id="contact_username"></p>
+          </div>
+          <div>
+            <p id="contact_email"></p>
+          </div>
+          <div>
+            <p id="contact_phone"></p>
+          </div>
+          <div>
+            <p id="contact_message"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./style.js"></script>
+  <script>
+    function renderContactFormData() {
+      local_name = localStorage.getItem("contact_name");
+      local_email = localStorage.getItem("contact_email");
+      local_phone = localStorage.getItem("contact_phone");
+      local_message = localStorage.getItem("contact_message");
+      username = document.getElementById("contact_username");
+      email = document.getElementById("contact_email");
+      phone = document.getElementById("contact_phone");
+      message = document.getElementById("contact_message");
+      username.textContent = local_name;
+      email.textContent = local_email;
+      phone.textContent = local_phone;
+      message.textContent = local_message;
+    }
+    renderContactFormData();
+  </script>
+</html>
