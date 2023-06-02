@@ -52,6 +52,9 @@
             <p id="contact_phone"></p>
           </div>
           <div>
+            <p id="contact_age"></p>
+          </div>
+          <div>
             <p id="contact_message"></p>
           </div>
         </div>
@@ -65,14 +68,17 @@
       local_email = localStorage.getItem("contact_email");
       local_phone = localStorage.getItem("contact_phone");
       local_message = localStorage.getItem("contact_message");
+      local_age = localStorage.getItem("contact_age");
       username = document.getElementById("contact_username");
       email = document.getElementById("contact_email");
       phone = document.getElementById("contact_phone");
       message = document.getElementById("contact_message");
+      age = document.getElementById("contact_age");
       username.textContent = local_name;
       email.textContent = local_email;
       phone.textContent = local_phone;
       message.textContent = local_message;
+      age.textContent = local_age;
     }
     renderContactFormData();
   </script>
